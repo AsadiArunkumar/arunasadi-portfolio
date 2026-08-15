@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="logo">&lt;YourName /&gt;</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="hero-greeting">👋 Hello, World!</p>
+    <h1 class="hero-name">Hi, I'm <span id="heroName">Your Name</span></h1>
+    <p class="hero-role">I'm a <span class="typed-text" id="typed"></span><span class="cursor">|</span></p>
+    <p class="hero-bio">
+      A passionate developer who loves crafting clean, efficient, and impactful solutions.
+      I turn complex problems into elegant digital experiences.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View My Work</a>
+      <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Hire Me</a>
+    </div>
+    <div class="hero-social">
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="section-label">Who I Am</div>
+  <div class="section-title">About <span>Me</span></div>
+  <div class="section-divider"></div>
+  <div class="about-grid">
+    <div class="about-img-wrap fade-in">
+      <div class="about-img-ring"></div>
+      <div class="about-img-placeholder">👤</div>
+    </div>
+    <div class="about-text fade-in">
+      <p>I'm a dedicated software developer with a passion for building robust,
+      scalable applications. I enjoy turning ideas into reality through code and
+      continuously learning new technologies.</p>
+      <p>When I'm not coding, I love exploring new tech, contributing to open-source,
+      and writing about things I learn along the way.</p>
+      <div class="about-info">
+        <div class="info-item">
+          <span class="info-label">Name</span>
+          <span class="info-value">Your Full Name</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Location</span>
+          <span class="info-value">Your City, Country</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Email</span>
+          <span class="info-value">your@email.com</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Availability</span>
+          <span class="info-value available">Open to Work ✅</span>
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="section-label">What I Do</div>
+  <div class="section-title">My <span>Skills</span></div>
+  <div class="section-divider"></div>
+  <div class="skills-grid">
+
+    <div class="skill-card fade-in">
+      <div class="skill-icon"><i class="fas fa-code"></i></div>
+      <div class="skill-name">Frontend Development</div>
+      <p class="skill-desc">Building responsive and accessible UIs with modern frameworks.</p>
+      <div class="skill-tags">
+        <span class="tag">HTML</span><span class="tag">CSS</span>
+        <span class="tag">JavaScript</span><span class="tag">React</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-in">
+      <div class="skill-icon"><i class="fas fa-server"></i></div>
+      <div class="skill-name">Backend Development</div>
+      <p class="skill-desc">Designing scalable server-side systems and REST APIs.</p>
+      <div class="skill-tags">
+        <span class="tag">Node.js</span><span class="tag">Python</span>
+        <span class="tag">REST API</span><span class="tag">SQL</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-in">
+      <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+      <div class="skill-name">Cloud &amp; DevOps</div>
+      <p class="skill-desc">Deploying and maintaining applications on cloud platforms.</p>
+      <div class="skill-tags">
+        <span class="tag">GitHub</span><span class="tag">CI/CD</span>
+        <span class="tag">Docker</span><span class="tag">AWS</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-in">
+      <div class="skill-icon"><i class="fas fa-database"></i></div>
+      <div class="skill-name">Database Management</div>
+      <p class="skill-desc">Designing and optimizing relational and NoSQL databases.</p>
+      <div class="skill-tags">
+        <span class="tag">MySQL</span><span class="tag">PostgreSQL</span>
+        <span class="tag">MongoDB</span><span class="tag">Redis</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-in">
+      <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+      <div class="skill-name">Mobile Development</div>
+      <p class="skill-desc">Building cross-platform mobile applications.</p>
+      <div class="skill-tags">
+        <span class="tag">React Native</span><span class="tag">Flutter</span>
+        <span class="tag">PWA</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-in">
+      <div class="skill-icon"><i class="fas fa-tools"></i></div>
+      <div class="skill-name">Tools &amp; Workflow</div>
+      <p class="skill-desc">Efficient development practices and collaboration tools.</p>
+      <div class="skill-tags">
+        <span class="tag">Git</span><span class="tag">VS Code</span>
+        <span class="tag">Figma</span><span class="tag">Jira</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="projects" id="projects">
+  <div class="section-label">What I've Built</div>
+  <div class="section-title">Featured <span>Projects</span></div>
+  <div class="section-divider"></div>
+  <div class="projects-grid">
+
+    <div class="project-card fade-in">
+      <div class="project-banner">💻</div>
+      <div class="project-body">
+        <div class="project-title">Project One</div>
+        <p class="project-desc">A brief description of your project, what problem it solves, and the technologies used.</p>
+        <div class="skill-tags mb">
+          <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+          <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-banner">📱</div>
+      <div class="project-body">
+        <div class="project-title">Project Two</div>
+        <p class="project-desc">A brief description of your project, what problem it solves, and the technologies used.</p>
+        <div class="skill-tags mb">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+          <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-banner">🌐</div>
+      <div class="project-body">
+        <div class="project-title">Project Three</div>
+        <p class="project-desc">A brief description of your project, what problem it solves, and the technologies used.</p>
+        <div class="skill-tags mb">
+          <span class="tag">Vue.js</span><span class="tag">Firebase</span><span class="tag">Tailwind</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+          <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="section-label">Get In Touch</div>
+  <div class="section-title">Contact <span>Me</span></div>
+  <div class="section-divider"></div>
+  <div class="contact-wrapper">
+    <div class="contact-info fade-in">
+      <h3>Let's work together!</h3>
+      <p>Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to new opportunities.</p>
+      <div class="contact-detail">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div class="contact-detail-text">
+          <div class="label">Email</div>
+          <div class="value">your@email.com</div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+        <div class="contact-detail
